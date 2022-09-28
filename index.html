@@ -9,16 +9,30 @@
     <title>Portfólio</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <a href="#" class="logo">CSS Nav</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Projects">Projects</a></li>
+        </ul>
+      </header>
+    <!--
+    <header class="header">
         <h1 id="nav-title"><a href="#">Portfólio</a></h1>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label> 
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
+                <li><a href="#About">About</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Projects</a></li>
             </ul>
         </nav>
     </header>
+    -->
     <div class="card-container">
         <img src="./assets/img/Avatar.png" alt="Avatar Card About">
         <div class="card-content">
@@ -36,6 +50,19 @@
             </div>
         </div>
     </div>
+    <section id="About">
+        <div class="about-container">
+            <img src="./assets/img/Group.png" alt="Imagem card about">
+            <div class="about-content">
+                <div>
+                    <h1>About Me</h1>
+                </div>
+                <div>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>    
         <h3>Meet me on social media</h3>
         <div class="footer-content">
