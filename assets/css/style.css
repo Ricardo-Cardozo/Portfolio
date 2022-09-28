@@ -208,6 +208,7 @@ header a:hover {
 .card-container img {
     padding: 2em 0;
     margin: 0 1em;
+    width: 400px;
 }
 
 .card-content h1 {
@@ -297,6 +298,11 @@ footer h3 {
 
 .about-content {
     color: #fff
+}
+
+.about-container img {
+  margin: 5em;
+  width: 600px;
 }
 
 .about-content h1{
@@ -467,7 +473,7 @@ footer h3 {
 /*Responsive*/
 @media only screen and (max-width: 1200px) {
   .about-container img {
-    margin-top: 5em;
+    margin: 5em;
     width: 250px;
   }
 
