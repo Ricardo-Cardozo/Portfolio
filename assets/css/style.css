@@ -558,7 +558,7 @@ footer h3 {
 }
 
 /*Responsive*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1286px) {
   .about-container img {
     margin: 5em;
     width: 250px;
@@ -575,13 +575,89 @@ footer h3 {
   .card-container img {
     width: 200px;
   }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+  }
+  .container {
+    margin: 1em;
+  }
+
+  .text {
+    display: block;
+    margin-bottom: 2em;
+    margin-left: 11em;
+  }
+  
+  .text a {
+    text-decoration: none;
+    color: white;
+    background-color: #07150A;
+    align-items: center;
+    font-size: 16px;
+    padding: 15px 100px;
+    border-radius: 10px;
+    border: solid 1px #fff;
+  }
+  
+  .text a:hover {
+    color: #07150A;
+    border: solid 1px #07150A;
+    background-color: #fff;
+  }
+  
+  
+  
+  .image {
+    border-radius: 10px;
+    margin-bottom: 2em;
+  }
 }
 @media only screen and (max-width: 950px) {
     /*Card about*/
+    .carousel {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5em;
+    }
+    .container {
+      margin: 1em;
+    }
+
+    .text {
+      display: block;
+      margin-bottom: 2em;
+      margin-left: 11em;
+    }
+    
+    .text a {
+      text-decoration: none;
+      color: white;
+      background-color: #07150A;
+      align-items: center;
+      font-size: 16px;
+      padding: 15px 100px;
+      border-radius: 10px;
+      border: solid 1px #fff;
+    }
+    
+    .text a:hover {
+      color: #07150A;
+      border: solid 1px #07150A;
+      background-color: #fff;
+    }
+    
+    
+    
+    .image {
+      border-radius: 10px;
+      margin-bottom: 2em;
+    }
     .card-container {
         display:flex;
         flex-direction: column;
-        align-items: center;
         margin:125px auto;
         width: 85%;
         background-color: rgba(155, 229, 162, 0.5);
@@ -606,4 +682,11 @@ footer h3 {
       margin: 0 1em;
       width: 200px;
   }
+  }
+
+  @media only screen and (max-width: 593px) {
+    .xas {
+      display:flex;
+      flex-direction: column;
+    }
   }
