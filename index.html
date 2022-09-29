@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <title>Portfólio</title>
 </head>
 <body>
@@ -121,27 +120,7 @@
         </section>
         
     </div>
-    <script>
-        $('nav .links li a').click(function(e) {
-            e.preventDefault();
-            var id = $(this).attr('href'),
-                targetOffset = $(id).offset().top;
-            $('html,body').animate({
-                scrollTop:targetOffset - 220
-            }, 200)
-        })
-        if( $(window).width() < 800){
-        /*faça algo*/
-        $('nav .links li a').click(function(e) {
-            e.preventDefault();
-            var id = $(this).attr('href'),
-                targetOffset = $(id).offset().top;
-            $('html,body').animate({
-                scrollTop:targetOffset - 420
-            }, 200)
-        })
-        }
-    </script>
+
     <script>
         var i = 0;
         var texto = "Hi, I'm Ricardo Cardozo..."
@@ -157,6 +136,26 @@
         }
 
         animacaoH1()
+
+    </script>
+    <script>
+        const menuItems = document.querySelectorAll('nav .links li a[href^="#"]') 
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', scrollToIdOnClick)
+        })
+
+        function scrollToIdOnClick(event) {
+            event.preventDefault()
+            const element = event.target
+            const id = element.getAttribute('href')
+            const to = document.querySelector(id).offsetTop
+            
+            window.scroll({
+                top: to - 120,
+                behavior: 'smooth'
+            })
+        }
     </script>
     
 </body>
