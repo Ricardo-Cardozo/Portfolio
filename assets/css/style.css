@@ -50,7 +50,7 @@ nav {
 	padding: 0 5%;
 	height: 100px;
 	background-color: #00070F;
-  border-bottom: 1px solid #3BF5D2;
+  	border-bottom: 1px solid #3BF5D2;
 }
 
 nav .logo a {
@@ -95,7 +95,7 @@ nav .links a {
 	color: #fff;
 	text-decoration: none;
   	transition: .7s;
-	margin-bottom: 2px;
+	margin-bottom: 1px;
 }
 nav .links a:hover {
   border-bottom:1px solid #3BF5D2;
