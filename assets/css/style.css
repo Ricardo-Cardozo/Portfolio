@@ -52,6 +52,12 @@ nav {
 	background-color: #000000;
   border-bottom: 1px solid #3BF5D2;
 }
+
+nav .logo a {
+	text-decoration: none;
+	color: #fff;
+}
+
 nav .logo {
 	float: left;
 	width: 40%;
@@ -89,7 +95,7 @@ nav .links a {
 	color: #fff;
 	text-decoration: none;
   	transition: .7s;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 }
 nav .links a:hover {
   border-bottom:1px solid #3BF5D2;
@@ -333,6 +339,48 @@ nav .icon-burger .line {
 .image-overlay:hover {
 	opacity: 1;
 }
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 40px 0;
+	background-color: #00070F;
+	width: 100%;
+	border-top: #3BF5D2 1px solid;	
+}
+
+footer h1 {
+	color: #3BF5D2;
+	font-size: 20px;
+	margin-bottom: 1.2em;
+}
+
+footer span i {
+	border-radius: 50%;
+	padding: 12px;
+	border: #3BF5D2 1px solid ;
+	color: #3BF5D2;
+	font-size: 25px;
+	margin: 0.2em;
+}
+
+footer span i:hover {
+	color: #00070F;
+	background-color: #3BF5D2;
+}
+
+footer p {
+	margin-top: 1.5em;
+	color: #fff;
+}
+
+footer p span{
+	color: #3BF5D2;
+}
+
 
 @media screen and (max-width: 768px) {
 	*{
