@@ -266,11 +266,86 @@ nav .icon-burger .line {
 	margin-bottom: 1em;
 }
 
+.link-project {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.link-project a {
+	background-color: #00070F;
+	text-decoration: none;
+	color: #3BF5D2;
+	border: #3BF5D2 1px solid;
+	padding: 10px 55px;
+	transition: .5s;
+}
+.card-project {
+	margin: 1em;
+}
+
+.link-project a:hover {
+	background-color: #3BF5D2;
+	color: #00070F;
+	border: #3BF5D2 1px solid;
+}
+
+.image {
+	position: relative;
+	width:350px;
+	margin-bottom: 1em;
+}
+.image-title {
+	color: #fff;
+	font-size: 24px;
+}
+
+.image-description {
+	margin-top: 1em;
+	font-size: 16px;
+	color: #fff;
+}
+.image-overlay > * {
+	transform: translateY(20px);
+	transition: transform .5s;
+}
+
+.image-overlay:hover > * {
+	transform: translateY(0);
+}
+
+.image-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 7, 15, 0.8);
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	transition: .5s;
+}
+
+.image-overlay:hover {
+	opacity: 1;
+}
+
 @media screen and (max-width: 768px) {
 	*{
 		margin: 0;
 		padding: 0;
 	}
+	.link-project a{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: .5em;
+	}
+
 	.home-container {
 		width: 80%;
 	}
@@ -278,6 +353,15 @@ nav .icon-burger .line {
 		justify-content: center;
 	}
 	.tech-container .home-container .about-title {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.desc-tech {
+		font-size: 14px;
+	}
+
+	.home-container .about-title {
 		text-align: center;
 		font-size: 16px;
 	}
