@@ -13,6 +13,24 @@
     <title>Ricardo Cardozo Dev</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <div class="logo"> <a href="#"><span>👾</span>RICARDO<strong>DEV</strong></a></div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About" onclick="">About</a></li>
+                <li><a href="#Tech">Technologies</a></li>
+                <li><a href="#Projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!---
     <nav>
         <input id="nav-toggle" type="checkbox">
         <div class="logo"> <a href="#"><span>👾</span>RICARDO<strong>DEV</strong></a></div>
@@ -28,6 +46,7 @@
             <div class="line"></div>
         </label>
     </nav>
+    -->
     <div class="container">
 
         
@@ -240,6 +259,45 @@
                 behavior: 'smooth'
             })
         }
+    </script>
+    <script>
+        class MobileNavbar {
+            constructor(mobileMenu, navList, navLinks) {
+                this.mobileMenu = document.querySelector(mobileMenu);
+                this.navList = document.querySelector(navList);
+                this.navLinks = document.querySelectorAll(navLinks);
+                this.activeClass = "active";
+                this.handleClick = this.handleClick.bind(this);
+            }
+
+            animateLinks() {
+                this.navLinks.forEach((link, index) => {
+                    link.style.animation
+                    ? (link.style.animation = "")
+                    : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`)
+                })
+            }
+
+            handleClick() {
+                this.animateLinks()
+                this.navList.classList.toggle(this.activeClass)
+                this.mobileMenu.classList.toggle(this.activeClass)
+            }
+
+            addClickEvent() {
+                this.mobileMenu.addEventListener('click', this.handleClick)
+            }
+
+            init() {
+                if (this.mobileMenu) {
+                    this.addClickEvent()
+                }
+                return this
+            }
+        }
+
+        const mobileNavbar = new MobileNavbar(".mobile-menu", "nav .links", ".links li")
+        mobileNavbar.init()
     </script>
     
 </body>
