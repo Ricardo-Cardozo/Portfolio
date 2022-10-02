@@ -13,7 +13,6 @@
     <title>Ricardo Cardozo Dev</title>
 </head>
 <body>
-
     <header>
         <nav>
             <div class="logo"> <a href="#"><span>👾</span>RICARDO<strong>DEV</strong></a></div>
@@ -31,13 +30,10 @@
         </nav>
     </header>
     <div class="container">
-
-        
         <div class="home-container">
             <section class="anime" id="Home">
                 <div class="home-content">
                     <div id="div-img"></div>
-                    
                     <div>
                         <div class="title-home" id="text">
                             <h1></h1>
@@ -58,11 +54,7 @@
                     </div>
                 </div>
             </section>
-        </div>
-        
-        
-
-        
+        </div>  
         <div class="home-container">
             <section class="anime" id="About">
                 <div class="about-content">
@@ -70,17 +62,11 @@
                         <h1>About Me</h1>
                     </div>
                     <div class="desc-about">
-                        <p>
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                        </p>
-                        
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
                     </div>
                 </div>
             </section>
         </div>
-        
-        
-        
         <div class="tech-container">
             <div class="home-container">
                 <section class="anime" id="Tech">
@@ -117,14 +103,11 @@
                         </div>
                     </div>
                     <div class="desc-tech">
-                        <p>
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
-                        </p>
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to 
                     </div>
                 </section>
             </div>
         </div>
-
         <div class="home-container">
             <section class="anime" id="Projects">
                 <div class="about-title">
@@ -133,7 +116,6 @@
                 <div class="tech-content">
                     <div class="card-project">
                         <div class="image">
-                            
                             <img src="./assets/img/node.png"  alt="NodeJS">
                             <div class="image-overlay">
                                 <h3 class="image-title">Social Media</h3>
@@ -151,7 +133,6 @@
                     </div>
                     <div class="card-project">
                         <div class="image">
-                            
                             <img src="./assets/img/node.png"  alt="NodeJS">
                             <div class="image-overlay">
                                 <h3 class="image-title">Social Media</h3>
@@ -169,7 +150,6 @@
                     </div>
                     <div class="card-project">
                         <div class="image">
-                            
                             <img src="./assets/img/node.png"  alt="NodeJS">
                             <div class="image-overlay">
                                 <h3 class="image-title">Social Media</h3>
@@ -193,10 +173,8 @@
                 <h1>Meet me on Social Media</h1>
             </div>
             <div class="span">
-
                 <span>
                     <a href="https://github.com/Ricardo-Cardozo"><i class="bi bi-github"></i></a>
-                   
                 </span>
                 <span>
                     <a href="https://www.linkedin.com/in/ricardo-cardozo-248b08243/"><i class="bi bi-linkedin"></i></a>
@@ -208,9 +186,7 @@
                 </div>
             </div>
         </footer>
-        
     </div>
-
     <script>
         var i = 0;
         var texto = "Hi, I'm Ricardo Cardozo..."
@@ -224,17 +200,13 @@
                 H1.classList.add('sombra')
             }
         }
-
         animacaoH1()
-
     </script>
     <script>
         const menuItems = document.querySelectorAll('nav .links li a[href^="#"]') 
-
         menuItems.forEach(item => {
             item.addEventListener('click', scrollToIdOnClick)
         })
-        
         function scrollToIdOnClick(event) {
             event.preventDefault()
             const element = event.target
@@ -252,7 +224,6 @@
                 })
             }
         }
-        
     </script>
     <script>
         class MobileNavbar {
@@ -263,7 +234,6 @@
                 this.activeClass = "active";
                 this.handleClick = this.handleClick.bind(this);
             }
-
             animateLinks() {
                 this.navLinks.forEach((link, index) => {
                     link.style.animation
@@ -271,17 +241,14 @@
                     : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`)
                 })
             }
-
             handleClick() {
                 this.animateLinks()
                 this.navList.classList.toggle(this.activeClass)
                 this.mobileMenu.classList.toggle(this.activeClass)
             }
-
             addClickEvent() {
                 this.mobileMenu.addEventListener('click', this.handleClick)
             }
-
             init() {
                 if (this.mobileMenu) {
                     this.addClickEvent()
@@ -289,10 +256,8 @@
                 return this
             }
         }
-
         const mobileNavbar = new MobileNavbar(".mobile-menu", "nav .links", ".links li")
         mobileNavbar.init()
     </script>
-    
 </body>
 </html>
