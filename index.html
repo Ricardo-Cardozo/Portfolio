@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" href="./assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/css/style.css"></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -187,7 +188,7 @@
             </div>
         </footer>
     </div>
-    <script>
+    <script preload>
         var i = 0;
         var texto = "Hi, I'm Ricardo Cardozo..."
         var H1 =  document.getElementById('text')
@@ -202,7 +203,7 @@
         }
         animacaoH1()
     </script>
-    <script>
+    <script preload>
         const menuItems = document.querySelectorAll('nav .links li a[href^="#"]') 
         menuItems.forEach(item => {
             item.addEventListener('click', scrollToIdOnClick)
@@ -225,7 +226,7 @@
             }
         }
     </script>
-    <script>
+    <script preload>
         class MobileNavbar {
             constructor(mobileMenu, navList, navLinks) {
                 this.mobileMenu = document.querySelector(mobileMenu);
